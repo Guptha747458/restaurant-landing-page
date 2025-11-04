@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Online - The Culinary Haven</title>
+    <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>The Culinary Haven</h1>
+            </div>
+            <nav>
+                <button class="nav-toggle" aria-label="toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="order.html">Order Online</a></li>
+                    <li><a href="index.html#gallery">Gallery</a></li>
+                    <li><a href="index.html#reservation">Reservation</a></li>
+                    <li><a href="index.html#location">Location</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="order" class="section-padding">
+            <div class="container">
+                <h2>Place Your Order Online</h2>
+                <p class="section-description">Browse our menu and place your order for pickup or delivery. We'll have it ready for you in no time!</p>
+
+                <div class="order-form-container">
+                    <form action="#" method="post" class="order-form">
+                        
+                        <div class="form-section">
+                            <h3>1. Your Information</h3>
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3>2. Select Your Items</h3>
+                            <div class="order-items-grid">
+                                <div class="order-item-card">
+                                    <img src="images/Veggie-Delight-Pasta.webp" alt="Veggie Delight Pasta">
+                                    <h4>Veggie Delight Pasta</h4>
+                                    <p class="item-price">$18.99</p>
+                                    <div class="quantity-control">
+                                        <label for="qty-pasta">Quantity:</label>
+                                        <input type="number" id="qty-pasta" name="qty-pasta" value="0" min="0">
+                                    </div>
+                                </div>
+
+                                <div class="order-item-card">
+                                    <img src="images/download.jpg" alt="Grilled Salmon">
+                                    <h4>Grilled Salmon</h4>
+                                    <p class="item-price">$24.50</p>
+                                    <div class="quantity-control">
+                                        <label for="qty-salmon">Quantity:</label>
+                                        <input type="number" id="qty-salmon" name="qty-salmon" value="0" min="0">
+                                    </div>
+                                </div>
+                                
+                                <div class="order-item-card">
+                                    <img src="images/steak.jpg" alt="Chef's Signature Steak">
+                                    <h4>Chef's Signature Steak</h4>
+                                    <p class="item-price">$35.00</p>
+                                    <div class="quantity-control">
+                                        <label for="qty-steak">Quantity:</label>
+                                        <input type="number" id="qty-steak" name="qty-steak" value="0" min="0">
+                                    </div>
+                                </div>
+                                <div class="order-item-card">
+                                    <img src="images/chicken.jpg" alt="Spicy Chicken Curry">
+                                    <h4>Spicy Chicken Curry</h4>
+                                    <p class="item-price">$21.00</p>
+                                    <div class="quantity-control">
+                                        <label for="qty-chicken">Quantity:</label>
+                                        <input type="number" id="qty-chicken" name="qty-chicken" value="0" min="0">
+                                    </div>
+                                </div>
+
+                                <div class="order-item-card">
+                                    <img src="images/confit.jpg" alt="Crispy Duck Confit">
+                                    <h4>Crispy Duck Confit</h4>
+                                    <p class="item-price">$29.99</p>
+                                    <div class="quantity-control">
+                                        <label for="qty-duck">Quantity:</label>
+                                        <input type="number" id="qty-duck" name="qty-duck" value="0" min="0">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3>3. Delivery or Pickup</h3>
+                            <div class="form-group delivery-options">
+                                <label>
+                                    <input type="radio" name="order-type" value="pickup" checked> Pickup
+                                </label>
+                                <label>
+                                    <input type="radio" name="order-type" value="delivery"> Delivery
+                                </label>
+                            </div>
+                            <div class="form-group delivery-address-group">
+                                <label for="address">Delivery Address</label>
+                                <input type="text" id="address" name="address" placeholder="Street, City, Zip Code">
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3>4. Additional Notes</h3>
+                            <div class="form-group">
+                                <label for="notes">Special Requests or Instructions</label>
+                                <textarea id="notes" name="notes" rows="4" placeholder="E.g., No onions, extra cheese, allergies, etc."></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn">Place Your Order</button>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>© 2025 The Culinary Haven. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu - The Culinary Haven</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>The Culinary Haven</h1>
+            </div>
+            <nav>
+                <button class="nav-toggle" aria-label="toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="order.html">Order Online</a></li>
+                    <li><a href="index.html#gallery">Gallery</a></li>
+                    <li><a href="index.html#reservation">Reservation</a></li>
+                    <li><a href="index.html#location">Location</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="menu-hero" class="hero">
+            <div class="hero-content container">
+                <h2>Explore Our Exquisite Menu</h2>
+                <p>A symphony of flavors crafted for every palate.</p>
+                <a href="order.html" class="btn">Order Now</a>
+            </div>
+        </section>
+
+        <section id="menu" class="section-padding">
+            <div class="container">
+                <h2>Our Delicious Offerings</h2>
+                <div class="menu-filters">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="vegetarian">Vegetarian</button>
+                    <button class="filter-btn" data-category="non-vegetarian">Non-Vegetarian</button>
+                    <button class="filter-btn" data-category="special">Special Items</button>
+                </div>
+
+                <div class="menu-items-grid">
+                    <div class="menu-item" data-category="vegetarian">
+                        <img src="images/Veggie-Delight-Pasta.webp" alt="Veggie Delight">
+                        <h3>Veggie Delight Pasta</h3>
+                        <p>Fresh pasta with seasonal vegetables and a light pesto sauce.</p>
+                        <span class="price">$18.99</span>
+                    </div>
+                    
+                    <div class="menu-item" data-category="non-vegetarian">
+                        <img src="images/download.jpg" alt="Grilled Salmon">
+                        <h3>Grilled Salmon</h3>
+                        <p>Perfectly grilled salmon with asparagus and lemon butter sauce.</p>
+                        <span class="price">$24.50</span>
+                    </div>
+                    
+                    <div class="menu-item" data-category="vegetarian">
+                        <img src="images/cap.jpg" alt="Caprese Salad">
+                        <h3>Classic Caprese Salad</h3>
+                        <p>Fresh mozzarella, ripe tomatoes, basil, and balsamic glaze.</p>
+                        <span class="price">$12.00</span>
+                    </div>
+                    
+                    <div class="menu-item" data-category="non-vegetarian">
+                        <img src="images/confit.jpg" alt="Crispy Duck Confit">
+                        <h3>Crispy Duck Confit</h3>
+                        <p>Tender duck leg cooked to perfection with a crispy skin, served with a cherry reduction.</p>
+                        <span class="price">$29.99</span>
+                    </div>
+
+                    <div class="menu-item" data-category="special">
+                        <img src="images/steak.jpg" alt="Chef's Special">
+                        <h3>Chef's Signature Steak</h3>
+                        <p>Premium cut, slow-cooked to perfection with a secret blend of spices.</p>
+                        <span class="price">$35.00</span>
+                    </div>
+                    
+                    <div class="menu-item" data-category="non-vegetarian">
+                        <img src="images/chicken.jpg" alt="Chicken Curry">
+                        <h3>Spicy Chicken Curry</h3>
+                        <p>Rich and flavorful chicken curry served with fragrant basmati rice.</p>
+                        <span class="price">$21.00</span>
+                    </div>
+                    
+                    <div class="menu-item" data-category="vegetarian">
+                        <img src="images/mushroom.jpg" alt="Mushroom Risotto">
+                        <h3>Creamy Mushroom Risotto</h3>
+                        <p>Arborio rice cooked with wild mushrooms and parmesan cheese.</p>
+                        <span class="price">$19.50</span>
+                    </div>
+
+                    <div class="menu-item" data-category="vegetarian">
+                        <img src="images/soup.jpg" alt="Tomato Basil Soup">
+                        <h3>Roasted Tomato Basil Soup</h3>
+                        <p>A classic, comforting soup with a hint of garlic and fresh basil.</p>
+                        <span class="price">$9.00</span>
+                    </div>
+                    
+                    <div class="menu-item" data-category="non-vegetarian">
+                        <img src="images/ribs.jpg" alt="Smoked BBQ Ribs">
+                        <h3>Smoked BBQ Ribs</h3>
+                        <p>Slow-smoked pork ribs with our signature tangy BBQ sauce and coleslaw.</p>
+                        <span class="price">$28.75</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>© 2025 The Culinary Haven. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
